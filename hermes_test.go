@@ -1,8 +1,9 @@
 package hermes
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 var testedThemes = []Theme{
@@ -38,6 +39,7 @@ func (ed *SimpleExample) getExample() (Hermes, Email) {
 		Product: Product{
 			Name:      "HermesName",
 			Link:      "http://hermes-link.com",
+			NavColor:  "#b22e2e",
 			Copyright: "Copyright © Hermes-Test",
 			Logo:      "http://www.duchess-france.org/wp-content/uploads/2016/01/gopher.png",
 		},
@@ -266,11 +268,11 @@ func (ed *WithInviteCode) getExample() (Hermes, Email) {
 
 	email := Email{
 		Body{
-			Name:      "Jon Snow",
+			Name: "Jon Snow",
 			Actions: []Action{
 				{
 					Instructions: "Here is your invite code:",
-					InviteCode: "123456",
+					InviteCode:   "123456",
 				},
 			},
 		},
@@ -306,7 +308,7 @@ func (ed *WithFreeMarkdownContent) getExample() (Hermes, Email) {
 		Body{
 			Name: "Jon Snow",
 			FreeMarkdown: `
-> _Hermes_ service will shutdown the **1st August 2017** for maintenance operations. 
+> _Hermes_ service will shutdown the **1st August 2017** for maintenance operations.
 
 Services will be unavailable based on the following schedule:
 
