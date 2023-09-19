@@ -1,5 +1,8 @@
 # Hermes
 
+NOTE: Forked from original repo to support passing in custom navbar color for emails per request.
+
+
 [![Build Status](https://travis-ci.org/matcornic/hermes.svg?branch=master)](https://travis-ci.org/matcornic/hermes)
 [![Go Report Card](https://goreportcard.com/badge/github.com/matcornic/hermes)](https://goreportcard.com/report/github.com/matcornic/hermes)
 [![Go Coverage](https://codecov.io/github/matcornic/hermes/coverage.svg)](https://codecov.io/github/matcornic/hermes/)
